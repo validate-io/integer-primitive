@@ -1,6 +1,6 @@
 {
   "name": "validate.io-integer-primitive",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Validates if a value is a number primitive and an integer.",
   "author": {
     "name": "Athan Reines",
