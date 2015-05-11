@@ -1,4 +1,4 @@
-integer-primitive
+Integer Primitive
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,38 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-integer-primitive' );
+var isInteger = require( 'validate.io-integer-primitive' );
 ```
 
-#### foo( value )
+#### isInteger( value )
 
-What does this function do?
+Validates if a value is a `number` primitive, excluding `NaN`, and an `integer`.
+
+``` javascript
+var bool = isInteger( 3 );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-integer-primitive' );
+var isInteger = require( 'validate.io-integer-primitive' );
+
+console.log( isInteger( 3 ) );
+// returns true
+
+console.log( isInteger( Math.PI ) );
+// returns false
+
+console.log( isInteger( NaN ) );
+// returns false
+
+console.log( isInteger( new Number( 5 ) ) );
+// returns false
+
+console.log( isInteger( '5' ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

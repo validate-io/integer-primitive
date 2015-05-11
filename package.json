@@ -26,12 +26,21 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "number",
+    "integer",
+    "is",
+    "isnumber",
+    "isinteger",
+    "primitive"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/integer-primitive/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-number-primitive": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",
